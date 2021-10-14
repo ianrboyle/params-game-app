@@ -9,4 +9,14 @@ class NamesController < ApplicationController
     end
   end
 
+  def get_creds
+    username = params[:username]
+    password = params[:password]
+    if username == "hugh" && password == "swordfish"
+      render json: {message: "Valid Credentials!"}
+    else
+      render json: {message: "Invalid Credentials!"}
+    end
+  end
+
 end

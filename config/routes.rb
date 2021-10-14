@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   get "/get_name" => "names#get_name"
   get "/numbers_game/:guessed_number" => "numbers#guess_number"
-  get "sum_numbers/:first_number/:second_number" => "numbers#get_sum"
+  get "/sum_numbers/:first_number/:second_number" => "numbers#get_sum"
+  post "/guess_numbers" => "numbers#guess_numbers"
+  post "/user_credentials" => "names#get_creds"
 end

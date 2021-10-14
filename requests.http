@@ -1,0 +1,16 @@
+POST http://localhost:3000/guess_numbers.json
+content-type: application/json
+
+{
+  "secret_number": 36
+}
+
+###
+
+POST http://localhost:3000/user_credentials.json
+content-type: application/json
+
+{
+  "username": "hgh",
+  "password": "swordfish"
+}
